@@ -1,9 +1,0 @@
-category: Libs
-requires: cygwin
-sdesc: "LZO data compression library"
-ldesc: "LZO is a data compression library which is suitable for data
-de-/compression in real-time. This means it favours speed
-over compression ratio.
-
-LZO is written in ANSI C. Both the source code and the compressed
-data format are designed to be portable across platforms."

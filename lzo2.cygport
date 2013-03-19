@@ -1,0 +1,19 @@
+NAME="lzo2"
+VERSION=2.06
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="LZO data compression library"
+DESCRIPTION="LZO is a portable lossless data compression library written in
+ANSI C. It offers pretty fast compression and very fast decompression."
+HOMEPAGE="http://www.oberhumer.com/opensource/lzo/"
+SRC_URI="http://www.oberhumer.com/opensource/lzo/download/lzo-${VERSION}.tar.gz"
+SRC_DIR="lzo-${VERSION}"
+
+PKG_NAMES="liblzo2_2 liblzo2-devel liblzo2-doc"
+liblzo2_2_CONTENTS="usr/bin/cyglzo2-2.dll"
+liblzo2_devel_CONTENTS="usr/include/ usr/lib/"
+liblzo2_doc_CONTENTS="usr/share/doc/"
+
+DIFF_EXCLUDES="config.hin"
+
+MAKEOPTS+=" LDFLAGS=-no-undefined"
