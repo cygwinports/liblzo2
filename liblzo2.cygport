@@ -1,5 +1,5 @@
 NAME="liblzo2"
-VERSION=2.06
+VERSION=2.08
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="LZO data compression library"
@@ -9,10 +9,10 @@ HOMEPAGE="http://www.oberhumer.com/opensource/lzo/"
 SRC_URI="http://www.oberhumer.com/opensource/lzo/download/lzo-${VERSION}.tar.gz"
 SRC_DIR="lzo-${VERSION}"
 
-PKG_NAMES="liblzo2_2 liblzo2-devel liblzo2-doc"
-liblzo2_2_CONTENTS="usr/bin/cyglzo2-2.dll"
+PKG_NAMES="liblzo2_2 liblzo2-devel"
+liblzo2_2_OBSOLETES="liblzo2-doc"
+liblzo2_2_CONTENTS="usr/bin/cyglzo2-2.dll usr/share/doc/"
 liblzo2_devel_CONTENTS="usr/include/ usr/lib/"
-liblzo2_doc_CONTENTS="usr/share/doc/"
 
 DIFF_EXCLUDES="config.hin"
 
